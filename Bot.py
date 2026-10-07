@@ -6,7 +6,7 @@ import os
 from datetime import datetime, timedelta
 import asyncio
 
-TOKEN = "MTU1NzM5OTU0MjY3NTI4NDA1OA.G_CykN.MO3rL7nDi7Lnv67ND6nsoPajWGZbqOM-VpJ2QM"
+TOKEN = "MTU1NzM5OTU0MjY3NTI4NDA1OA.GjgDXK.OzhfB_sq-tdBuizGdQpdyzw0RZUTtbCGCEY3F4"
 DATA_FILE = "data.json"
 
 # ================== КОНФИГ ==================
