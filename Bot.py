@@ -5,9 +5,15 @@ import json
 import os
 from datetime import datetime, timedelta
 import asyncio
+from dotenv import load_dotenv
 
-TOKEN = "MTU1NzM5OTU0MjY3NTI4NDA1OA.GjgDXK.OzhfB_sq-tdBuizGdQpdyzw0RZUTtbCGCEY3F4"
+load_dotenv()
+
+TOKEN = os.getenv("DISCORD_TOKEN")
 DATA_FILE = "data.json"
+
+if not TOKEN:
+    raise RuntimeError("Токен не найден в .env! Добавь строку: DISCORD_TOKEN=твой_токен")
 
 # ================== КОНФИГ ==================
 ROLE_FULL = 1435260764381380799
